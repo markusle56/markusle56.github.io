@@ -66,7 +66,7 @@ disable_sections = true
             <img class="avatar mb-2 img-fluid" src="images/portfolio_logo.png">
             <div class="column-gap-3 d-flex display-6 justify-content-center">
                 {{< paige/icon class="bi bi-linkedin" title="Linkedin" url="https://www.linkedin.com/in/markus-le-581b55245/" >}}
-                {{< paige/icon class="bi bi-instagram" title="Instagram" url="https://www.instagram.com/ahhkhoale/" >}}
+                {{< paige/icon class="bi bi-github" title="Github" url="https://github.com/markusle56" >}}
                 {{< paige/icon class="bi bi-envelope-fill" title="Email" url="mailto:anhkhoa.wm@gmail.com" >}}
                 {{< paige/icon class="bi bi-file-earmark-text-fill" title="Resume" url="/AnhKhoa-Le-resume.pdf" target="_blank" >}}
             </div>

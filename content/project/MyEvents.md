@@ -1,6 +1,6 @@
 +++
 date = "2025-07-01T14:18:10+09:30"
-draft = true
+draft = false
 title = "MyEvents"
 +++
 

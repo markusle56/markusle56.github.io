@@ -1,0 +1,139 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+    
+
+    
+        
+
+        
+            
+        
+    
+
+
+
+
+<?xml version="1.0" encoding="utf-8"?>
+
+<rss version="2.0"  xml:lang="en-us"  xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        
+
+        
+
+        
+            <language>en-us</language>
+        
+
+        
+            <lastBuildDate>Fri, 27 Jun 2025 13:30:00 ACST</lastBuildDate>
+        
+
+        
+            <link>http://localhost:1313/pages/</link>
+        
+
+        
+            <atom:link href="http://localhost:1313/pages/rss.xml" hreflang="en-us" rel="self" type="application/rss+xml"/>
+        
+
+        
+            
+
+            <atom:link href="http://localhost:1313/pages/" hreflang="en-us" rel="alternate" type="text/html"/>
+        
+            
+
+            <atom:link href="http://localhost:1313/pages/rss.xml" hreflang="en-us" rel="alternate" type="application/rss+xml"/>
+        
+
+        
+
+        
+
+        
+            <title>Pages · My New Hugo Site</title>
+        
+
+        
+
+        
+            
+                <item>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        
+                    
+
+                    
+                    
+                    
+
+                    
+
+                    
+                        <description><![CDATA[About me]]></description>
+                    
+
+                    
+                        <guid isPermaLink="false">tag:localhost:1313,2025-06-27:/pages/about/</guid>
+                    
+
+                    
+                        <link>http://localhost:1313/pages/about/</link>
+                    
+
+                    
+                        
+
+                        
+
+                        <atom:link href="http://localhost:1313/pages/about/" hreflang="en-us" rel="alternate" type="text/html"/>
+                    
+
+                    
+
+                    
+                        <pubDate>Fri, 27 Jun 2025 13:30:00 ACST</pubDate>
+                    
+
+                    
+                        <title>Hi, I’m Khoale</title>
+                    
+                </item>
+            
+        
+    </channel>
+</rss>

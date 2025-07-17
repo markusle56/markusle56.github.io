@@ -1,0 +1,83 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+        
+
+        
+            
+        
+    
+
+
+
+
+<?xml version="1.0" encoding="utf-8"?>
+
+<rss version="2.0"  xml:lang="en-us"  xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        
+            <copyright>© Markus Le</copyright>
+        
+
+        
+            <description>I have a variety of things to share on this page, and it&rsquo;s better to show them with images.</description>
+        
+
+        
+            <language>en-us</language>
+        
+
+        
+            <lastBuildDate>Tue, 01 Jul 2025 14:18:10 ACST</lastBuildDate>
+        
+
+        
+            <link>http://localhost:1313/about/</link>
+        
+
+        
+            <atom:link href="http://localhost:1313/about/rss.xml" hreflang="en-us" rel="self" type="application/rss+xml"/>
+        
+
+        
+            
+
+            <atom:link href="http://localhost:1313/about/" hreflang="en-us" rel="alternate" type="text/html"/>
+        
+            
+
+            <atom:link href="http://localhost:1313/about/rss.xml" hreflang="en-us" rel="alternate" type="application/rss+xml"/>
+        
+
+        
+
+        
+
+        
+            <title>Markus Le</title>
+        
+
+        
+
+        
+    </channel>
+</rss>

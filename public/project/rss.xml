@@ -1,0 +1,195 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+        
+
+        
+            
+        
+    
+
+
+
+
+<?xml version="1.0" encoding="utf-8"?>
+
+<rss version="2.0"  xml:lang="en-us"  xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        
+            <copyright>© Markus Le</copyright>
+        
+
+        
+            <description>Those are my projects</description>
+        
+
+        
+            <language>en-us</language>
+        
+
+        
+            <lastBuildDate>Tue, 01 Jul 2025 14:18:10 ACST</lastBuildDate>
+        
+
+        
+            <link>http://localhost:1313/project/</link>
+        
+
+        
+            <atom:link href="http://localhost:1313/project/rss.xml" hreflang="en-us" rel="self" type="application/rss+xml"/>
+        
+
+        
+            
+
+            <atom:link href="http://localhost:1313/project/" hreflang="en-us" rel="alternate" type="text/html"/>
+        
+            
+
+            <atom:link href="http://localhost:1313/project/rss.xml" hreflang="en-us" rel="alternate" type="application/rss+xml"/>
+        
+
+        
+
+        
+
+        
+            <title>Markus Le</title>
+        
+
+        
+
+        
+            
+                <item>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                    
+                    
+
+                    
+
+                    
+                        <description><![CDATA[<h1 id=project-overview>Project Overview</h1><div class=paige-shortcode-figure><div class="align-items-center d-flex float-end h-100 justify-content-center ms-4"><figure class=mb-0><div class="d-flex justify-content-center text-center"><div class=paige-shortcode-image><img class="img-fluid rounded" crossorigin=anonymous height=1674 referrerpolicy=no-referrer src=http://localhost:1313/myevent-1.7436cc2432e73c06f2e65a492703dafbdd86913aeb56bef624e7385bad070413.png style=height:auto;width:35rem width=2928></div></div></figure></div></div><p>Every day, the University of Adelaide and its student clubs host dozens of events-from social mixers and pub crawls to career expos and skill-building workshops. These activities are scattered across Instagram, Facebook and various faculty websites, making it difficult for students-especially first‑years - to stay informed. As a result, many valuable opportunities are missed.</p><p><strong>MyEvents</strong> is a centralized, university‑focused platform (think Eventbrite for Adelaide Uni) that enables verified students and staff to:</p><ul><li>Discover and browse upcoming events</li><li>Search, filter and explore rich event details</li><li>Register or purchase (free and on-site paid) tickets</li><li>Create and publish their own events</li></ul><p>With MyEvents, everyone in our community can easily find and participate in the experiences that matter to them.</p><hr><h2 id=tech-stack>Tech Stack</h2><ul><li><strong>Front End:</strong> Vue.js</li><li><strong>Back End:</strong> Node.js, MySQL, Passport.js</li></ul><hr><div class=paige-shortcode-figure><div class="align-items-center d-flex float-end h-100 justify-content-center ms-4"><figure class=mb-0><div class="d-flex justify-content-center text-center"><div class=paige-shortcode-image><img class="img-fluid rounded" crossorigin=anonymous height=1664 referrerpolicy=no-referrer src=http://localhost:1313/myevent-2.4608ca58634facbdc141f5a861d12518cfbb5c4e43cc8062ffd6a791ee89a586.png style=height:auto;width:40rem width=2928></div></div></figure></div></div><h2 id=features--functionality>Features & Functionality</h2><h3 id=role-based-features>Role-Based Features</h3><table><thead><tr><th>Feature</th><th style=text-align:center>Admin</th><th style=text-align:center>User</th><th style=text-align:center>Visitor</th></tr></thead><tbody><tr><td><strong>Admin Dashboard</strong></td><td style=text-align:center>✓</td><td style=text-align:center></td><td style=text-align:center></td></tr><tr><td><strong>User Management</strong></td><td style=text-align:center>✓</td><td style=text-align:center></td><td style=text-align:center></td></tr><tr><td>• Search & Filter Users</td><td style=text-align:center>✓</td><td style=text-align:center></td><td style=text-align:center></td></tr><tr><td>• List All Users</td><td style=text-align:center>✓</td><td style=text-align:center></td><td style=text-align:center></td></tr><tr><td>• Add & Edit Users</td><td style=text-align:center>✓</td><td style=text-align:center></td><td style=text-align:center></td></tr><tr><td>• Assign Admin Role</td><td style=text-align:center>✓</td><td style=text-align:center></td><td style=text-align:center></td></tr><tr><td>• Delete Users</td><td style=text-align:center>✓</td><td style=text-align:center></td><td style=text-align:center></td></tr><tr><td><strong>Event Management</strong></td><td style=text-align:center></td><td style=text-align:center></td><td style=text-align:center></td></tr><tr><td>• Search & Filter Events</td><td style=text-align:center>✓</td><td style=text-align:center>✓</td><td style=text-align:center>✓</td></tr><tr><td>• List All Events</td><td style=text-align:center>✓</td><td style=text-align:center>✓</td><td style=text-align:center>✓</td></tr><tr><td>• Create & Edit Events</td><td style=text-align:center>✓</td><td style=text-align:center>✓</td><td style=text-align:center></td></tr><tr><td>• Upload Event Images</td><td style=text-align:center>✓</td><td style=text-align:center>✓</td><td style=text-align:center>✓</td></tr><tr><td>• Delete Events</td><td style=text-align:center>✓</td><td style=text-align:center></td><td style=text-align:center></td></tr><tr><td><strong>Event Browsing & Ticketing</strong></td><td style=text-align:center></td><td style=text-align:center></td><td style=text-align:center></td></tr><tr><td>• Browse & View Details</td><td style=text-align:center>✓</td><td style=text-align:center>✓</td><td style=text-align:center>✓</td></tr><tr><td>• Filter by Type & Date</td><td style=text-align:center>✓</td><td style=text-align:center>✓</td><td style=text-align:center>✓</td></tr><tr><td>• Ticket Quantity Control</td><td style=text-align:center>✓</td><td style=text-align:center>✓</td><td style=text-align:center>✓</td></tr><tr><td>• Purchase Tickets</td><td style=text-align:center>✓</td><td style=text-align:center>✓</td><td style=text-align:center>✓</td></tr><tr><td><strong>Authentication & Profiles</strong></td><td style=text-align:center></td><td style=text-align:center></td><td style=text-align:center></td></tr><tr><td>• Local Signup & Login</td><td style=text-align:center></td><td style=text-align:center>✓</td><td style=text-align:center>✓</td></tr><tr><td>• Google OAuth Integration</td><td style=text-align:center></td><td style=text-align:center>✓</td><td style=text-align:center>✓</td></tr><tr><td>• Profile Management</td><td style=text-align:center>✓</td><td style=text-align:center>✓</td><td style=text-align:center></td></tr></tbody></table><hr><h2 id=security--quality>Security & Quality</h2><ul><li><strong>Session Management:</strong> Secure cookies, session timeouts and logout handling</li><li><strong>Input Validation & Sanitization:</strong> Protection against SQL injection, XSS and other attacks</li><li><strong>Password Security:</strong> Bcrypt hashing and complexity enforcement</li><li><strong>Role-Based Access Control:</strong> Fine‑grained permissions on UI and API endpoints</li><li><strong>Password Strength Meter:</strong> Real‑time feedback during registration</li><li><strong>Email Notifications:</strong> Automated welcome messages and ticket confirmations</li></ul><hr><h2 id=known-limitations>Known Limitations</h2><ul><li><strong>Forgot Password:</strong> UI scaffolded; backend flow pending</li><li><strong>Online Payments:</strong> Currently cash‑only on-site; no integrated gateway</li><li><strong>Scalability:</strong> Single‑region MySQL; consider sharding or read‑replicas under heavy load</li></ul><hr><h2 id=project-team>Project Team</h2><table><thead><tr><th>Name</th><th>Role</th><th>GitHub Handle</th></tr></thead><tbody><tr><td><strong>Anh Khoa Le</strong></td><td>Backend Developer</td><td><a href=https://github.com/markusle56 rel=external>markusle56</a></td></tr><tr><td><strong>Ngoc Han Ngo</strong></td><td>Frontend Developer</td><td><a href=https://github.com/ngongochan rel=external>ngongochan</a></td></tr><tr><td><strong>Luong Phuoc Nguyen</strong></td><td>Frontend Developer</td><td><a href=https://github.com/lphuoc16 rel=external>lphuoc16</a></td></tr></tbody></table>]]></description>
+                    
+
+                    
+                        <guid isPermaLink="false">tag:localhost:1313,2025-07-01:/project/myevents/</guid>
+                    
+
+                    
+                        <link>http://localhost:1313/project/myevents/</link>
+                    
+
+                    
+                        
+
+                        
+
+                        <atom:link href="http://localhost:1313/project/myevents/" hreflang="en-us" rel="alternate" type="text/html"/>
+                    
+
+                    
+
+                    
+                        <pubDate>Tue, 01 Jul 2025 14:18:10 ACST</pubDate>
+                    
+
+                    
+                        <title>MyEvents</title>
+                    
+                </item>
+            
+        
+            
+                <item>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                    
+                    
+
+                    
+
+                    
+                        <description><![CDATA[<p>This portfolio was built using Hugo and Paige as an experiment to explore a new tool.</p>]]></description>
+                    
+
+                    
+                        <guid isPermaLink="false">tag:localhost:1313,2025-07-01:/project/portfolio/</guid>
+                    
+
+                    
+                        <link>http://localhost:1313/project/portfolio/</link>
+                    
+
+                    
+                        
+
+                        
+
+                        <atom:link href="http://localhost:1313/project/portfolio/" hreflang="en-us" rel="alternate" type="text/html"/>
+                    
+
+                    
+
+                    
+                        <pubDate>Tue, 01 Jul 2025 14:17:12 ACST</pubDate>
+                    
+
+                    
+                        <title>Portfolio</title>
+                    
+                </item>
+            
+        
+    </channel>
+</rss>

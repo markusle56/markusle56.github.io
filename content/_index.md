@@ -63,7 +63,7 @@ disable_sections = true
 <div class="container-sm w-75">
     <div class="align-items-center row">
         <div class="col-md-4 text-center">
-            <img class="avatar mb-2 img-fluid" src="images/portfolio_logo.png">
+            <img class="avatar mb-2 img-fluid" src="images/avatar.jpeg">
             <div class="column-gap-3 d-flex display-6 justify-content-center">
                 {{< paige/icon class="bi bi-linkedin" title="Linkedin" url="https://www.linkedin.com/in/markus-le-581b55245/" >}}
                 {{< paige/icon class="bi bi-github" title="Github" url="https://github.com/markusle56" >}}

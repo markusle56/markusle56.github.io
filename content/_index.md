@@ -68,7 +68,7 @@ disable_sections = true
                 {{< paige/icon class="bi bi-linkedin" title="Linkedin" url="https://www.linkedin.com/in/markus-le-581b55245/" >}}
                 {{< paige/icon class="bi bi-github" title="Github" url="https://github.com/markusle56" >}}
                 {{< paige/icon class="bi bi-envelope-fill" title="Email" url="mailto:anhkhoa.wm@gmail.com" >}}
-                {{< paige/icon class="bi bi-file-earmark-text-fill" title="Resume" url="/AnhKhoa-Le-resume.pdf" target="_blank" >}}
+                {{< paige/icon class="bi bi-file-earmark-text-fill" title="Resume" url="/Resume.pdf" >}}
             </div>
         </div>
         <div class="col-md-8">

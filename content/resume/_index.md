@@ -1,5 +1,5 @@
-+++ 
-description = "" 
++++
+description = ""
 +++
 
 # Anh Khoa (Markus) Le
@@ -15,7 +15,8 @@ description = ""
 
 ## 🛠️ Technical Skills
 
-- **Languages:** C++ (Proficient), Python (Intermediate), C (Intermediate), JavaScript (Intermediate)
+- **Languages:** C++ (Proficient), Python (Intermediate), C (Intermediate), JavaScript (Intermediate)  
+- **Frameworks/Libraries:** Node.js, Vue.js, React.js, Next.js, TensorFlow, PyTorch
 
 ---
 
@@ -36,25 +37,27 @@ description = ""
 
 ## 💻 Projects
 
-### **Pawpals** – *March 2025*
-Created a web application during UniHack 2025 aimed at reuniting lost pets with their owners.  
-- Developed a CNN-based image recognition system  
-- Integrated AWS S3, MySQL, and AI for smooth data handling  
+### **VegaHed** – *Ongoing*  
+- Full-stack web application built with NextJS and ReactJS  
+- Productivity tool that stores and automatically classifies URLs for review  
+- Inspired by Punk Record (VegaPunk from One Piece)
+
+### **MyEvents** – *June 2025*  
+- Full-stack web application centralising all events at the University of Adelaide  
+- Designed and managed the database, integrated authentication APIs  
+- Handled backend development and server-side logic  
+- Contributed to UI/UX design and developed frontend pages
+
+### **Pawpals** – *March 2025*  
+- Web application developed during UniHack 2025 to reunite lost pets with owners  
+- Built a CNN-based image recognition model  
+- Integrated AWS S3, MySQL, and AI for seamless data management  
 - Collaborated in a team of six; completed within 48 hours
 
-### **Maj-Chess** – *November 2024*  
-C++ and SFML-based chess variant developed in Object-Oriented Programming class.  
-- Designed unique gameplay mechanics  
-- Created an interactive graphical user interface using SFML
-
-### **Short Video Recommendation System** – *November 2024*  
-- Analysed challenges in short video recommendation algorithms  
-- Proposed and designed a novel recommendation engine for social media
-
 ### **Cost of Living in Australia** – *July 2024*  
-- Integrated and processed CPI, WPI, and LCI datasets  
-- Visualised trends using Plotly and Matplotlib  
-- Applied predictive modeling via scikit-learn to forecast living costs
+- Analysed CPI, WPI, and LCI datasets  
+- Visualised data with Plotly and Matplotlib  
+- Applied predictive models using scikit-learn to forecast trends
 
 ---
 
@@ -62,24 +65,11 @@ C++ and SFML-based chess variant developed in Object-Oriented Programming class.
 
 ### **Vietfest – Media Leader** | *Adelaide, SA*  
 *December 2024 – Present*  
-- Led a 15-person media team for Vietfest  
-- Planned campaign timelines and key promotional events  
-- Delegated tasks and maintained team productivity
+- Managed a 15-person team for Vietfest media coverage  
+- Planned campaign timelines and promotional events  
+- Delegated tasks, set deadlines, and fostered productivity
 
-### **Hot Star – Part-time Staff** | *Adelaide, SA*  
-*March 2024 – Present*  
-- Managed food preparation and order-taking  
-- Performed solo daily operations  
-- Handled stock inventory and resupply
-
-### **CS Club – Volunteer** | *The University of Adelaide*  
+### **CS Club – Volunteer** | *The University of Adelaide, SA*  
 *September 2024 – February 2025*  
-- Supported events and club activities  
-- Assisted members with both technical and logistical support
-
-### **Adelaide University Vietnamese Students Association – Event Staff**  
-*March 2024 – December 2024*  
-- Helped plan and execute cultural and community events  
-- Promoted student engagement and inclusivity
-
----
+- Supported club activities and events  
+- Assisted members with both technical and non-technical tasks

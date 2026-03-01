@@ -8,8 +8,7 @@ description = ""
 📍 Adelaide, SA  
 📞 0430 240 300  
 📧 anhkhoa.wm@gmail.com  
-🔗 [LinkedIn](https://linkedin.com/in/markusle) • 🌐 [Portfolio](https://markusle56.github.io)
-
+🔗 [LinkedIn](https://linkedin.com/in/markusle)
 </div>
 
 ---

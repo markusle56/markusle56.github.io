@@ -26,16 +26,6 @@ VegaHed is a full-stack web application inspired by the *One Piece* character Ve
 {{< paige/figure float="end" >}}
 {{< paige/image src="vegahed_dashboard.png" width="35rem" class="rounded" >}}
 {{< /paige/figure >}}
-## 📅 Project Timeline
-
-| **Phase**            | **Start Date** | **End Date** | **Status**   | **Details**                                                                 |
-|-----------------------|----------------|--------------|--------------|----------------------------------------------------------------------------|
-| Planning              | 19/7           | 20/7         | Done         | Defined scope, goals, and requirements.                                     |
-| Design                | 21/7           | 28/7         | Done         | Created wireframes, mockups, and finalized design assets.                   |
-| Development (Core)    | 30/7           | 30/9         | Ongoing      | Implementing core features: authentication, dashboard, API integration.     |
-| Deployment (Initial)  | 1/10           | 5/10         | Planned      | Launch MVP version with core functions.                                    |
-| Updates & Enhancements| 10/10          | ongoing      | Planned      | Add new features: dark mode, profile customization, advanced LLM classifiers, optional integrations. |
-
 ---
 
 ## 🛠️ Technical Specifications
@@ -80,34 +70,4 @@ VegaHed is a full-stack web application inspired by the *One Piece* character Ve
 - Passkey login (planned)  
 
 ---
-## 📝 Task Breakdown
-
-### Planning Phase
-✅ Define project scope and objectives  
-✅ Create project timeline  
-✅ Draw data architecture  
-
-### Design Phase
-✅ Create wireframes  
-✅ Design mockups  
-✅ Finalize design assets  
-
-### Development Phase
-✅ Set up development environment  
-✅ Implement database structure 
-⬜ Implement frontend components  
-⬜ Develop backend functionality  
-⬜ Integrate APIs  
- 
-
-### Testing Phase
-⬜ Conduct unit testing  
-⬜ Fix identified bugs  
-⬜ Performance optimization  
-
-### Deployment Phase
-⬜ Prepare deployment strategy  
-⬜ Set up production environment  
-⬜ Deploy website  
-⬜ Monitor for issues  
 

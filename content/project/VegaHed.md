@@ -7,36 +7,45 @@ title = "VegaHed"
 {{< paige/image src="vegahed.png" width="30rem" class="rounded" >}}
 {{< /paige/figure >}}
 
-# 📋 Project Overview
+# Project Overview
 
+VegaHed is a full-stack web application inspired by the *One Piece* character Vegapunk, who consumed a fruit that allows him to remember everything he has ever read. However, the more knowledge he acquires, the larger his head becomes. With his intelligence, he invented Punk Record — a system that stores his knowledge on a server and links with his brain, allowing him to keep learning without worrying about the physical limits of his head.
 
+**VegaHed** acts as a personal "Punk Record." Users paste links to YouTube videos, TikToks, articles, or any webpage, and the system automatically categorises the content using AI — making it easy to review without searching across multiple platforms.
 
-VegaHed is a full-stack web application inspired by the *One Piece* character Vegapunk, who consumed a fruit that allows him to remember everything he has ever read. However, the more knowledge he acquires, the larger his head becomes. With his intelligence, he invented Punk Record, a system that can store his knowledge as a server and link with his brain, allowing him to keep learning without worrying about the physical limits of his head.  
+**Live site: [vegahead.com](https://vegahead.com)**
 
-**VegaHed** acts as a personal "Punk Record," where users can paste links such as YouTube videos, TikTok posts, or Facebook posts. The system automatically categorizes them, making it easy to review information without searching across multiple platforms.
+---
+
+## Features
+
+- **Save any URL** — paste a link and have it stored in your personal archive
+- **AI-powered categorisation** — content is automatically categorised on save using Google Gemini / OpenAI
+- **Metadata extraction** — title, description, and thumbnail scraped and stored for each record
+- **Search** — search across all saved records by keyword
+- **Authentication** — email/password sign-up and sign-in via NextAuth v5
+- **Email notifications** — transactional emails via Resend
+- **Dashboard** — browse and manage all saved records in one place
 
 ---
 
-## 🎯 Project Goals & Objectives
-
-- **Primary Goal:** Store all videos and post URLs that users consider important and want to review in the future.  
-- **Secondary Goals:** Automatically categorize saved information and improve the efficiency of revision.  
-
----
 {{< paige/figure float="end" >}}
 {{< paige/image src="vegahed_dashboard.png" width="35rem" class="rounded" >}}
 {{< /paige/figure >}}
----
 
-## 🛠️ Technical Specifications
+## Tech Stack
 
-| **Layer**          | **Technologies**                  | **Notes**                                                                 |
-|--------------------|-----------------------------------|---------------------------------------------------------------------------|
-| Frontend           | ReactJS, Tailwind CSS             | Built with ReactJS for UI logic; TailwindCSS used for fast, responsive styling. |
-| Backend            | NextJS, Auth.js                   | NextJS handles fullstack routing and API endpoints; Auth.js manages authentication and authorization. |
-| Database           | MongoDB Atlas                     | Cloud-hosted MongoDB Atlas used for scalable, secure database management. |
-| Deployment | TBD   | Likely Vercel for seamless NextJS deployment; alternatives under consideration. |
-
+| Layer      | Technology                                      |
+|------------|-------------------------------------------------|
+| Framework  | Next.js 15 (App Router)                        |
+| Language   | TypeScript                                      |
+| Styling    | Tailwind CSS v4                                 |
+| Auth       | NextAuth v5 with MongoDB Adapter                |
+| Database   | MongoDB                                         |
+| AI         | Google Gemini, OpenAI                           |
+| Scraping   | Metascraper, Cheerio                            |
+| Email      | Resend                                          |
+| Runtime    | Node.js / pnpm                                  |
 
 ---
 
@@ -44,30 +53,19 @@ VegaHed is a full-stack web application inspired by the *One Piece* character Ve
 {{< paige/image src="vegahed-color.png" width="16rem" class="rounded" >}}
 {{< /paige/figure >}}
 
-## 🎨 Design Resources
+## Design Resources
 
-- **Brand Guidelines:** Logo (self-designed)  
-- **Color Palette:**  
+- **Brand Guidelines:** Logo (self-designed)
+- **Color Palette:**
 
 | #FFFFFF | #FFF6EA | #7C0A02 | #ED2939 | #FF5757 |
 |---------|---------|---------|---------|---------|
 
-- **Typography:** Rowdies, Maven Pro  
-- **Mockups:** [Canva](https://www.canva.com/design/DAGtndnALKI/xU_uTeM6EHbHLOA0vYnKQw/edit)  
+- **Typography:** Rowdies, Maven Pro
+- **Mockups:** [Canva](https://www.canva.com/design/DAGtndnALKI/xU_uTeM6EHbHLOA0vYnKQw/edit)
 
 ---
 
-## 🔍 Main Functions
+## GitHub
 
-- Login / Sign Up / Sign Out  
-- Google & Facebook Authentication  
-- Homepage  
-- Dashboard  
-- LLM-based classifiers  
-- API integration  
-- Cookies / Session handling  
-- Profile page  
-- Passkey login (planned)  
-
----
-
+[markusle56/vegahed](https://github.com/markusle56/vegahed)

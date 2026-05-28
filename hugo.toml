@@ -73,13 +73,7 @@ tag = "tags"
     weight     = 20
 
   [[menu.main]]
-    identifier = "resume"
-    name       = "Resume"
-    url        = "/resume/"
-    weight     = 30
-
-  [[menu.main]]
     identifier = "about"
     name       = "About"
     url        = "/about/"
-    weight     = 40
+    weight     = 30

@@ -1,5 +1,5 @@
 +++
-date = "2026-03-01T14:18:10+09:30"
+date = "2025-09-01T14:18:10+09:30"
 draft = false
 title = "🦆 NexusS — Merging Study Sessions"
 +++

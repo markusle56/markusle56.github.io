@@ -63,12 +63,11 @@ disable_sections = true
 <div class="container-sm w-75">
     <div class="align-items-center row">
         <div class="col-md-4 text-center">
-            <img class="avatar mb-2 img-fluid" src="images/avatar.jpeg">
+            <img class="avatar mb-2 img-fluid" src="https://media.licdn.com/dms/image/v2/D5603AQFjVJ56XtSMPw/profile-displayphoto-crop_800_800/B56ZnBqaaVG0AM-/0/1759890746188?e=1781740800&v=beta&t=m4ayfCZFqdZYIqG7FXhZFD-r3e-AGTEzL4kvsjbZ8SY">
             <div class="column-gap-3 d-flex display-6 justify-content-center">
                 {{< paige/icon class="bi bi-linkedin" title="Linkedin" url="https://www.linkedin.com/in/markus-le-581b55245/" >}}
                 {{< paige/icon class="bi bi-github" title="Github" url="https://github.com/markusle56" >}}
                 {{< paige/icon class="bi bi-envelope-fill" title="Email" url="mailto:anhkhoa.wm@gmail.com" >}}
-                {{< paige/icon class="bi bi-file-earmark-text-fill" title="Resume" url="/Resume.pdf" >}}
             </div>
         </div>
         <div class="col-md-8">

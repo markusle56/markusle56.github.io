@@ -1,0 +1,18 @@
+{{ define "main" }}
+<section class="sec">
+  <h1>{{ .Title | default (humanize .Section) }}</h1>
+  {{- with .Description }}<p class="lede">{{ . }}</p>{{ end }}
+
+  {{- with .Content }}
+  <div class="prose prose-wide clearfix">{{ . }}</div>
+  {{- end }}
+
+  {{- with sort .RegularPages "Date" "desc" }}
+  <div class="grid-auto" style="margin-top:var(--space-6);">
+    {{- range . }}
+    {{- partial "project-card.html" . }}
+    {{- end }}
+  </div>
+  {{- end }}
+</section>
+{{ end }}

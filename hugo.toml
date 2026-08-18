@@ -1,79 +1,37 @@
-baseURL = 'https://markusle56.github.io'
-timezone = "Australia/Adelaide"
+baseURL = 'https://anhkhoa.dev/'
+locale = 'en-us'
 title = 'Markus Le'
+timezone = "Australia/Adelaide"
+enableRobotsTXT = true
 
-[markup.highlight]
-noclasses = false
-style = "github"
+# Tags on project cards are decorative labels, not browsable archives.
+disableKinds = ["taxonomy", "term"]
 
-[[module.imports]]
-path = "github.com/willfaught/paige"
-ignoreLogs = ["warning-goldmark-raw-html"]
+[params]
+author = "Anh Khoa Le"
+nickname = "Markus"
+description = "Advanced Computer Science undergrad at the University of Adelaide, building AI/ML and full-stack projects."
+email = "anhkhoa.wm@gmail.com"
+linkedin = "https://www.linkedin.com/in/markus-le-581b55245/"
+github = "https://github.com/markusle56"
+# Recovered from the old build output — replace static/Resume.pdf to update it.
+resume = "/Resume.pdf"
 
-[languages.en]
-copyright = "© Markus Le"
-languagecode = "en-us"
-languagedirection = "ltr"
-languagename = "English"
-weight = 10
+[params.sections.work]
+title = "Things I built"
+lede = "A mix of hackathon sprints, challenge builds, and side projects, mostly AI/ML and full-stack web."
+
+[params.sections.thoughts]
+title = "My Thoughts"
+lede = "Occasional write-ups on AI/ML, hackathons, and building things, plus a diary of lessons learned, and a new home for what used to live scattered across socials."
 
 [markup.goldmark.renderer]
 unsafe = true
 
+[markup.highlight]
+noClasses = false
+style = "github"
 
-[languages.en.params.paige.site]
-description = "The best way to predict the future is to invent it"
-
-[params.paige.pages]
-disable_authors = true
-disable_date = true
-disable_keywords = true
-disable_next = true
-disable_prev = true
-disable_reading_time = true
-disable_series = true
-disable_toc = true
-disable_word_count = true
-
-[paige.pages.base_schema]
-isAccessibleForFree = true
-isFamilyFriendly = true
-
-[params.paige.site]
-disable_breadcrumbs = true
-disable_credit = true
-
-[params.paige.subpages]
-disable_authors = true
-disable_date = true
-disable_keywords = true
-disable_reading_time = true
-disable_series = true
-disable_summary = true
-disable_word_count = true
-
-[taxonomies]
-author = "authors"
-category = "categories"
-series = "series"
-tag = "tags"
-
-[menu]
-
-  [[menu.main]]
-    identifier = "home"
-    name       = "Home"
-    url        = "/"
-    weight     = 10
-
-  [[menu.main]]
-    identifier = "projects"
-    name       = "Projects"
-    url        = "/project/"
-    weight     = 20
-
-  [[menu.main]]
-    identifier = "about"
-    name       = "About"
-    url        = "/about/"
-    weight     = 30
+[markup.tableOfContents]
+startLevel = 2
+endLevel = 3

@@ -1,0 +1,47 @@
+{{- $title := cond .IsHome site.Title (printf "%s · %s" .Title site.Title) -}}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ $title }}</title>
+
+{{- with or .Description .Summary site.Params.description }}
+<meta name="description" content="{{ . | plainify | truncate 200 }}">
+{{- end }}
+<meta name="author" content="{{ site.Params.author }}">
+
+<meta property="og:type" content="{{ cond .IsPage `article` `website` }}">
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:url" content="{{ .Permalink }}">
+{{- with or .Description site.Params.description }}
+<meta property="og:description" content="{{ . | plainify | truncate 200 }}">
+{{- end }}
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="canonical" href="{{ .Permalink }}">
+<link rel="icon" type="image/png" href="{{ "images/portfolio_logo.png" | relURL }}">
+
+{{- with .OutputFormats.Get "rss" }}
+<link rel="alternate" type="application/rss+xml" href="{{ .Permalink }}" title="{{ site.Title }}">
+{{- end }}
+
+{{- /* Set the theme before first paint so a dark-mode visitor never sees a
+       flash of the light palette. */ -}}
+<script>
+  (function () {
+    try {
+      var stored = localStorage.getItem('portfolio-theme');
+      var dark = stored ? stored === 'dark'
+        : window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+    } catch (e) {
+      document.documentElement.setAttribute('data-theme', 'light');
+    }
+  })();
+</script>
+
+{{- $css := resources.Get "css/main.css" }}
+{{- if hugo.IsProduction }}
+  {{- $css = $css | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+{{- else }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+{{- end }}

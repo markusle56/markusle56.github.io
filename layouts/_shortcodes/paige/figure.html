@@ -1,0 +1,13 @@
+{{- /*
+  {{< paige/figure float="start|end" >}} ... {{< /paige/figure >}}
+
+  Kept from the old Paige theme so existing project markdown renders unchanged.
+*/ -}}
+{{- $float := .Get "float" -}}
+{{- $class := "pg-figure" -}}
+{{- if eq $float "start" }}{{ $class = "pg-figure pg-figure-start" }}{{ end -}}
+{{- if eq $float "end" }}{{ $class = "pg-figure pg-figure-end" }}{{ end -}}
+<figure class="{{ $class }}">
+  {{ .Inner }}
+  {{- with .Get "caption" }}<figcaption>{{ . | markdownify }}</figcaption>{{ end }}
+</figure>

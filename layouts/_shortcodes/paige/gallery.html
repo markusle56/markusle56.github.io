@@ -1,0 +1,28 @@
+{{- /*
+  {{< paige/gallery images="album/*" maxheight="15rem" type="rows" class="rounded" />}}
+
+  Matches images under assets/ by glob and lays them out in flowing rows.
+  Kept from the old Paige theme.
+*/ -}}
+{{- /* Existing content calls this self-closing, and Hugo requires a shortcode
+       to evaluate .Inner whenever a closing tag is present. */ -}}
+{{- $_ := .Inner -}}
+{{- $glob := .Get "images" -}}
+{{- $maxheight := .Get "maxheight" | default "15rem" -}}
+{{- $class := .Get "class" | default "" -}}
+{{- $images := .Page.Resources.Match $glob -}}
+{{- if not $images }}{{ $images = resources.Match $glob }}{{ end -}}
+{{- if $images }}
+<div class="pg-gallery" style="--gallery-maxheight:{{ $maxheight }};">
+  {{- range $images }}
+  {{- $thumb := . }}
+  {{- if in (slice "image/jpeg" "image/png" "image/webp" "image/tiff") .MediaType.Type }}
+    {{- $thumb = .Resize "x600 webp q80" }}
+  {{- end }}
+  <img class="{{ $class }}" src="{{ $thumb.RelPermalink }}" alt="" loading="lazy"
+       style="height:{{ $maxheight }};width:auto;">
+  {{- end }}
+</div>
+{{- else }}
+  {{- warnf "paige/gallery: no images matched %q on page %s" $glob .Page.Path -}}
+{{- end -}}

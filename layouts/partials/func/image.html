@@ -1,0 +1,50 @@
+{{- /*
+  Resolve an image reference to a Hugo resource, optionally transformed.
+
+  Accepts a dict:
+    src   — path inside assets/ (e.g. "album/running.jpeg"), a page resource
+            name, or an absolute http(s) URL
+    page  — optional page, so page-bundle resources resolve too
+    fill  — optional "WxH" spec; the image is cropped to fill it
+    width — optional target width in px; the image is resized down to it
+
+  Returns the resource, or an empty string when it cannot be resolved, so
+  callers can guard with `with`. Remote URLs come back as a resource-shaped
+  dict (RelPermalink/Width/Height) since there is nothing to process.
+
+  Note: Hugo does not halt on `return`, so this is written as a single
+  assignment chain with one return at the end.
+*/ -}}
+
+{{- $src := .src -}}
+{{- $out := "" -}}
+
+{{- if or (hasPrefix $src "http://") (hasPrefix $src "https://") -}}
+  {{- $out = dict "RelPermalink" $src "Width" 0 "Height" 0 "IsRemote" true -}}
+{{- else -}}
+  {{- $res := "" -}}
+  {{- with .page -}}
+    {{- $res = .Resources.GetMatch $src -}}
+  {{- end -}}
+  {{- if not $res -}}
+    {{- $res = resources.Get $src -}}
+  {{- end -}}
+
+  {{- if $res -}}
+    {{- $raster := slice "image/jpeg" "image/png" "image/webp" "image/tiff" "image/bmp" -}}
+    {{- if in $raster $res.MediaType.Type -}}
+      {{- with $.fill -}}
+        {{- $res = $res.Fill (printf "%s webp q85 Center" .) -}}
+      {{- else -}}
+        {{- with $.width -}}
+          {{- if lt (int .) $res.Width -}}
+            {{- $res = $res.Resize (printf "%dx webp q85" (int .)) -}}
+          {{- end -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+    {{- $out = $res -}}
+  {{- end -}}
+{{- end -}}
+
+{{- return $out -}}

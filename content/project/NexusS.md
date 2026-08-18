@@ -1,7 +1,12 @@
 +++
 date = "2025-09-01T14:18:10+09:30"
 draft = false
-title = "🦆 NexusS — Merging Study Sessions"
+title = "🦆 NexusS: Merging Study Sessions"
+kicker = "BIG Hackathon · Built in 34 hours"
+blurb = "Helps students discover and join nearby study sessions on a live map, because studying alone is overrated."
+tags = ["Next.js", "TypeScript", "MongoDB", "MapLibre"]
+link = "https://nexuss2025.vercel.app/"
+linkLabel = "Try the demo"
 +++
 
 

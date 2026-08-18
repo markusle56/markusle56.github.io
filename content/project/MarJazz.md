@@ -1,7 +1,12 @@
 +++
 date = "2026-03-01T00:00:00+09:30"
 draft = false
-title = "MarJazz — Jazz Piano Generation"
+title = "MarJazz: Jazz Piano Generation"
+kicker = "AI / Generative music"
+blurb = "A dual-block LSTM that improvises solo jazz piano from REMI-tokenised MIDI, trained on the PiJAMA dataset."
+tags = ["PyTorch", "Python", "Machine Learning"]
+link = "https://github.com/markusle56/MarJazzzzz"
+linkLabel = "View on GitHub"
 +++
 
 {{< paige/figure float="end" >}}

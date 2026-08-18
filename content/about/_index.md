@@ -1,9 +1,7 @@
-+++ 
++++
+title = "Outside the code"
 description = "I have a variety of things to share on this page, and it's better to show them with images."
 +++
-
-<br><br>
-<div class="container-sm w-75">
 
 {{< paige/figure float="end" >}}
 {{< paige/image src="https://images.unsplash.com/photo-1490604001847-b712b0c2f967?w=1296" width="20rem" class="rounded" >}}
@@ -106,5 +104,3 @@ ___
 
 
 {{< paige/gallery images="album/*" maxheight="15rem" type="rows" class="rounded" />}}
-
-</div>

@@ -1,0 +1,30 @@
+{{ define "main" }}
+<article class="sec">
+  <header class="page-header">
+    {{- with .Parent }}
+    <a class="page-back" href="{{ .RelPermalink }}">← {{ .Title | default (humanize .Section) }}</a>
+    {{- end }}
+    {{- with .Params.kicker }}<p class="kicker">{{ . }}</p>{{ end }}
+    <h1>{{ .Title }}</h1>
+    {{- if and .Date (not .Params.hide_date) }}
+    <p class="text-muted" style="font-size:13px;margin-bottom:var(--space-2);">
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 January 2006" }}</time>
+    </p>
+    {{- end }}
+    {{- with .Params.tags }}
+    <div class="skill-tags" style="margin-bottom:var(--space-3);">
+      {{- range . }}<span class="tag tag-neutral">{{ . }}</span>{{ end }}
+    </div>
+    {{- end }}
+    {{- with .Params.link }}
+    <a class="btn btn-secondary" href="{{ . }}" target="_blank" rel="noopener">
+      {{ $.Params.linkLabel | default "View source" }} ↗
+    </a>
+    {{- end }}
+  </header>
+
+  <div class="prose prose-wide clearfix">
+    {{ .Content }}
+  </div>
+</article>
+{{ end }}

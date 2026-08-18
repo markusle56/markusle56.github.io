@@ -1,0 +1,18 @@
+{{- /*
+  {{< paige/image src="foo.png" width="20rem" class="rounded" alt="..." >}}
+
+  src resolves against the page bundle first, then assets/, then falls through
+  as-is for absolute URLs. Kept from the old Paige theme.
+*/ -}}
+{{- $src := .Get "src" -}}
+{{- $width := .Get "width" -}}
+{{- $class := .Get "class" | default "" -}}
+{{- $alt := .Get "alt" | default "" -}}
+{{- $res := partial "func/image.html" (dict "src" $src "page" .Page) -}}
+{{- if $res -}}
+<img class="pg-image {{ $class }}" src="{{ $res.RelPermalink }}" alt="{{ $alt }}" loading="lazy"
+     {{- with $width }} style="width:{{ . }};"{{ end }}
+     {{- if $res.Width }} width="{{ $res.Width }}" height="{{ $res.Height }}"{{ end }}>
+{{- else -}}
+  {{- warnf "paige/image: could not resolve %q on page %s" $src .Page.Path -}}
+{{- end -}}

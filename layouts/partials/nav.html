@@ -1,0 +1,25 @@
+{{- $isHome := .IsHome -}}
+{{- $hasThoughts := gt (len (where site.RegularPages "Section" "thoughts")) 0 -}}
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="nav-brand" href="{{ "/" | relURL }}">{{ site.Params.author | default site.Title }}</a>
+
+    {{- /* On the home page the nav jumps between sections; everywhere else it
+           has to send you back to the home page first. */ -}}
+    {{- $prefix := cond $isHome "" (site.Home.RelPermalink) }}
+    <a href="{{ $prefix }}#work">Work</a>
+    <a href="{{ $prefix }}#timeline">Timeline</a>
+    <a href="{{ $prefix }}#outside">Outside code</a>
+    {{- if $hasThoughts }}
+    <a href="{{ $prefix }}#thoughts">Thoughts</a>
+    {{- end }}
+
+    <button type="button" id="theme-toggle" class="btn btn-icon btn-secondary"
+            aria-label="Toggle dark mode" aria-pressed="false">
+      <svg class="theme-icon theme-icon-crescent" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z"></path></svg>
+      <svg class="theme-icon theme-icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"></path></svg>
+    </button>
+
+    <a href="{{ $prefix }}#contact" class="btn btn-primary">Get in touch</a>
+  </div>
+</nav>

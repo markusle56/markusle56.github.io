@@ -1,7 +1,12 @@
 +++
 date = "2026-04-01T00:00:00+09:30"
 draft = false
-title = "#SkillHub.md — Agent Skill Registry"
+title = "#SkillHub.md: Agent Skill Registry"
+kicker = "Product Cadet Challenge 2026"
+blurb = "A SPA where builders upload, tag, and share markdown skill files for AI agents like Claude Code, with auth, versioning, and a public registry to browse."
+tags = ["React", "FastAPI", "SQLite", "Docker"]
+link = "https://github.com/markusle56/Agent-Skills-Registry"
+linkLabel = "View on GitHub"
 +++
 
 {{< paige/figure float="end" >}}

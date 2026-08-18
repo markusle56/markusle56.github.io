@@ -2,6 +2,9 @@
 date = "2025-07-01T14:18:10+09:30"
 draft = false
 title = "MyEvents"
+kicker = "University project"
+blurb = "An Eventbrite for Adelaide Uni: one place to find, publish and book the events that are otherwise scattered across Instagram and faculty sites."
+tags = ["Vue.js", "Node.js", "MySQL", "Passport.js"]
 +++
 
 # Project Overview

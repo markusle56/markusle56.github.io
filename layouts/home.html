@@ -1,0 +1,129 @@
+{{ define "main" }}
+{{- $p := .Params -}}
+
+{{/* ------------------------------------------------------------------ hero */}}
+<header class="sec hero">
+  <div>
+    <h1>{{ $p.headline | default (printf "Hi, I'm %s." site.Params.nickname) }}</h1>
+    {{- with $p.pronounce }}
+    <p class="hero-pronounce">{{ . | markdownify }}</p>
+    {{- end }}
+    {{- with $p.bio }}
+    <p class="hero-bio">{{ . | markdownify }}</p>
+    {{- end }}
+    <div class="hero-actions">
+      <a href="#work" class="btn btn-primary">See my work</a>
+      {{- with site.Params.resume }}
+      <a href="{{ . | relURL }}" class="btn btn-secondary" target="_blank" rel="noopener">Résumé</a>
+      {{- end }}
+    </div>
+  </div>
+  {{- with $p.hero_image }}
+  {{- with partial "func/image.html" (dict "src" . "fill" "720x900") }}
+  <div class="halftone halftone-frame">
+    <img class="hero-photo" src="{{ .RelPermalink }}" alt="Portrait of {{ site.Params.author }}"
+         {{- if .Width }} width="{{ .Width }}" height="{{ .Height }}"{{ end }}>
+  </div>
+  {{- end }}
+  {{- end }}
+</header>
+
+{{/* ------------------------------------------------------------------ work */}}
+{{- $projects := where site.RegularPages "Section" "project" }}
+{{- $projects = sort $projects "Date" "desc" }}
+{{- with $projects }}
+<section class="sec" id="work">
+  <h2>{{ site.Params.sections.work.title | default "Things I built" }}</h2>
+  <p class="lede">{{ site.Params.sections.work.lede }}</p>
+  <div class="grid-auto">
+    {{- range . }}
+    {{- partial "project-card.html" . }}
+    {{- end }}
+  </div>
+</section>
+{{- end }}
+
+{{/* ---------------------------------------------------------------- skills */}}
+{{- with hugo.Data.skills }}
+<section class="sec" id="skills">
+  <h2>Skills &amp; stack</h2>
+  <div class="skill-groups">
+    {{- range .groups }}
+    <div>
+      <h5>{{ .name }}</h5>
+      <div class="skill-tags">
+        {{- range .tags }}<span class="tag {{ .variant | default "tag-neutral" }}">{{ .label }}</span>{{ end }}
+      </div>
+    </div>
+    {{- end }}
+  </div>
+</section>
+{{- end }}
+
+{{/* -------------------------------------------------------------- timeline */}}
+{{- with hugo.Data.timeline }}
+<section class="sec" id="timeline">
+  <h2>Timeline</h2>
+  <div class="timeline">
+    <div class="timeline-items">
+      {{- range .entries }}
+      <div class="timeline-item">
+        <span class="timeline-when">{{ .when }}</span>
+        <h4>{{ .title }}</h4>
+        <p>{{ .body }}</p>
+      </div>
+      {{- end }}
+    </div>
+  </div>
+</section>
+{{- end }}
+
+{{/* --------------------------------------------------------------- outside */}}
+{{- $about := site.GetPage "/about" }}
+<section class="sec outside" id="outside">
+  <div>
+    <h2>Outside the code</h2>
+    {{- with $p.outside_text }}<p>{{ . | markdownify }}</p>{{ end }}
+    {{- with $about }}
+    <a class="btn btn-secondary" href="{{ .RelPermalink }}">More about me</a>
+    {{- end }}
+  </div>
+  {{- with $p.outside_images }}
+  <div class="outside-grid">
+    {{- range . }}
+    {{- $item := . }}
+    {{- with partial "func/image.html" (dict "src" $item.src "fill" "560x560") }}
+    <a href="{{ with $about }}{{ .RelPermalink }}{{ end }}" class="halftone">
+      <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}"
+           alt="{{ $item.alt }}" loading="lazy">
+    </a>
+    {{- end }}
+    {{- end }}
+  </div>
+  {{- end }}
+</section>
+
+{{/* -------------------------------------------------------------- thoughts */}}
+{{- $thoughts := where site.RegularPages "Section" "thoughts" }}
+{{- with $thoughts }}
+<section class="sec" id="thoughts">
+  <h2>{{ site.Params.sections.thoughts.title | default "My Thoughts" }}</h2>
+  <p class="lede">{{ site.Params.sections.thoughts.lede }}</p>
+  <div class="grid-auto-sm">
+    {{- range first 6 (sort . "Date" "desc") }}
+    <article class="card">
+      {{- if .Params.draft }}<span class="tag tag-outline" style="width:fit-content;">Draft</span>{{ end }}
+      <h3 class="card-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+      <p class="card-body">{{ .Params.blurb | default .Summary | plainify | truncate 160 }}</p>
+      <div class="card-meta">
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 Jan 2006" }}</time>
+      </div>
+    </article>
+    {{- end }}
+  </div>
+  {{- if gt (len .) 6 }}
+  <p style="margin-top:var(--space-4);"><a href="{{ (site.GetPage "/thoughts").RelPermalink }}">All thoughts →</a></p>
+  {{- end }}
+</section>
+{{- end }}
+{{ end }}

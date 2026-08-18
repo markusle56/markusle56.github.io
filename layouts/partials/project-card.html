@@ -1,0 +1,22 @@
+{{- /* One project card. `featured = true` in the front matter tints it with the
+       accent and adds a chip — same size as every other card. */ -}}
+{{- $featured := .Params.featured -}}
+<article class="card elev-sm{{ if $featured }} card-featured{{ end }}">
+  <div class="card-labels">
+    {{- with .Params.kicker }}<span class="card-kicker">{{ . }}</span>{{ end }}
+    {{- if $featured }}<span class="tag tag-outline">Featured</span>{{ end }}
+  </div>
+  <h3 class="card-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+  <p class="card-body">{{ .Params.blurb | default .Summary | plainify | truncate 180 }}</p>
+  {{- with .Params.tags }}
+  <div class="skill-tags">
+    {{- range . }}<span class="tag tag-neutral">{{ . }}</span>{{ end }}
+  </div>
+  {{- end }}
+  <div class="card-meta">
+    <a class="row-link" href="{{ .RelPermalink }}">Read more →</a>
+    {{- with .Params.link }}
+    <a class="row-link" href="{{ . }}" target="_blank" rel="noopener">{{ $.Params.linkLabel | default "View source" }} ↗</a>
+    {{- end }}
+  </div>
+</article>

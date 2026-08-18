@@ -1,7 +1,13 @@
 +++
-date = "2025-08-26T13:07:03.720098"
+date = "2026-08-01T00:00:00+09:30"
 draft = false
 title = "VegaHed"
+kicker = "Full-stack · Live"
+featured = true
+blurb = "A personal “Punk Record”: paste any link and it scrapes the metadata and files it away under an AI-picked category."
+tags = ["Next.js", "TypeScript", "MongoDB", "Gemini"]
+link = "https://vegahead.com"
+linkLabel = "Visit the site"
 +++
 {{< paige/figure float="end" >}}
 {{< paige/image src="vegahed.png" width="30rem" class="rounded" >}}
@@ -66,6 +72,17 @@ VegaHed is a full-stack web application inspired by the *One Piece* character Ve
 
 ---
 
-## GitHub
+## Browser Extension
 
-[markusle56/vegahed](https://github.com/markusle56/vegahed)
+A Manifest V3 Chrome extension puts the whole vault one keystroke away: capture
+the current tab, search your records by meaning, and mint private or public
+short links without leaving the page.
+
+| | |
+|---|---|
+| **Capture** | Save the open tab straight into your vault, AI category and all |
+| **Search** | Semantic search across every record from the popup |
+| **Short links** | Private (`/my/`) or public (`/to/`) slugs with availability checks |
+| **Shortcut** | Quick-capture on any page with ⌘⇧S / Ctrl+Shift+S |
+
+Built with Vite, React 18, TypeScript and Tailwind CSS via `@crxjs/vite-plugin`.

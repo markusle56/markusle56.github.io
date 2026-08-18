@@ -1,81 +1,28 @@
 +++
-keywords = [
-    "accessibility",
-    "atom feeds",
-    "authors",
-    "blog",
-    "bootstrap styles and icons",
-    "breadcrumbs",
-    "categories",
-    "code shortcode",
-    "customizable",
-    " color scheme",
-    "email shortcode",
-    "facebook sharing",
-    "figure shortcode",
-    "gallery shortcode",
-    "hugo",
-    "icon shortcode",
-    "image pixel densities",
-    "image shortcode",
-    "image size breakpoints",
-    "image thumbnails",
-    "internationalization",
-    "landing page",
-    "light color scheme",
-    "localizations",
-    "math typesetting",
-    "menu",
-    "minimal design",
-    "module",
-    "quote shortcode",
-    "responsive",
-    "right-to-left languages",
-    "rss feeds",
-    "safari and firefox reader view support",
-    "search",
-    "sections",
-    "seo",
-    "series",
-    "single column",
-    "tab shortcode",
-    "table of contents",
-    "tags",
-    "theme",
-    "title links",
-    "twitter sharing",
-    "validated",
-    "vimeo shortcode",
-    "youtube shortcode",
-]
-[paige.pages]
-disable_collections = true
-disable_pages = true
-disable_sections = true
+title = "Home"
+headline = "Hi, I'm Markus."
+pronounce = "You can also call me Anh Khoa, my Vietnamese name, pronounced /aŋ̟h kʷɔːǎ/. Whatever's easier for you."
+bio = "A random nerd who loves doing new things and learning whatever comes his way. I'm always trying to improve and stay open to new opportunities. Coding, science, geography, or cooking are all good topics to start a conversation with me. Or ask me to play chess, volleyball, or pretty much any sport, that's a great icebreaker too."
+# Drop your portrait at assets/portrait.jpg. The old site hotlinked the LinkedIn
+# CDN, whose URLs carry an expiry token and stop resolving. Until the file
+# exists the hero simply renders without a photo.
+hero_image = "portrait.jpg"
+
+outside_text = "Probably out for a run, mixing footage for a friend's project, or wiring up mics for VietFest, where I volunteer as Media Leader, keeping Vietnamese culture visible for the community in Adelaide. Chemistry was my first love back in high school, when I earned a spot on the provincial training team, and I still don't miss a League of Legends World Championship. Volleyball's where I unwind on weekends. This description might be a little out of date. I'm probably off trying something new right as you're reading this."
+
+[[outside_images]]
+src = "vietfest.png"
+alt = "Volunteering as Media Leader at VietFest"
+
+[[outside_images]]
+src = "album/running.jpeg"
+alt = "Out for a run around the city"
+
+[[outside_images]]
+src = "volleyball.png"
+alt = "Playing volleyball"
+
+[[outside_images]]
+src = "t1.jpg"
+alt = "Watching T1 at the League of Legends World Championship"
 +++
-
-
-
-
-<h1 class="fw-bold h1 text-center" style="margin-top: 2rem"></h1>
-
-
-<div class="container-sm w-75">
-    <div class="align-items-center row">
-        <div class="col-md-4 text-center">
-            <img class="avatar mb-2 img-fluid" src="https://media.licdn.com/dms/image/v2/D5603AQFjVJ56XtSMPw/profile-displayphoto-crop_800_800/B56ZnBqaaVG0AM-/0/1759890746188?e=1781740800&v=beta&t=m4ayfCZFqdZYIqG7FXhZFD-r3e-AGTEzL4kvsjbZ8SY">
-            <div class="column-gap-3 d-flex display-6 justify-content-center">
-                {{< paige/icon class="bi bi-linkedin" title="Linkedin" url="https://www.linkedin.com/in/markus-le-581b55245/" >}}
-                {{< paige/icon class="bi bi-github" title="Github" url="https://github.com/markusle56" >}}
-                {{< paige/icon class="bi bi-envelope-fill" title="Email" url="mailto:anhkhoa.wm@gmail.com" >}}
-            </div>
-        </div>
-        <div class="col-md-8">
-            <p class="lead mb-0">I’m Anh Khoa (Markus), an Advanced Computer Science undergrad at Adelaide University. I’m passionate about AI and ML, whether designing neural networks for complex data or crafting personalized recommender systems, and I thrive on tackling the problem‑solving challenges of software engineering. 
-            <br>
-            <br>
-            Outside the code I channel my creativity into designing striking visuals, producing short‑form videos and crafting engaging content that speaks to audiences. 
-        </div>
-    </div>
-</div>
-

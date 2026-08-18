@@ -1,0 +1,17 @@
+# Timeline shown on the home page, newest first.
+entries:
+  - when: "Jul 2026 - Present"
+    title: "Data Science Intern, Lunio"
+    body: "Working in the Streamline team to develop a dynamic pricing service."
+
+  - when: "Dec 2025 - Feb 2026"
+    title: "Research Student, AIML"
+    body: "Simulated copolymerization reactions to compute reactivity ratios and identify candidate compounds for solid-state batteries, helping design the systems and running them on an HPC cluster."
+
+  - when: "2024 - Present"
+    title: "Computer Science (Advanced), University of Adelaide"
+    body: "Undergraduate, focused on AI/ML and software engineering."
+
+  - when: "High school"
+    title: "Chemistry major"
+    body: "Selected for the school and provincial chemistry training teams."

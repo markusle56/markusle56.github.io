@@ -1,0 +1,37 @@
+# Skills shown in the "Skills & stack" section on the home page.
+# variant: tag-accent | tag-accent-2 | tag-neutral | tag-outline
+groups:
+  - name: Languages
+    tags:
+      - { label: Python, variant: tag-accent }
+      - { label: TypeScript, variant: tag-accent }
+      - { label: JavaScript, variant: tag-accent }
+      - { label: Java, variant: tag-accent }
+      - { label: "C++", variant: tag-accent }
+      - { label: C, variant: tag-accent }
+      - { label: R, variant: tag-accent }
+
+  - name: Frontend
+    tags:
+      - { label: React, variant: tag-neutral }
+      - { label: Next.js, variant: tag-neutral }
+      - { label: Vue.js, variant: tag-neutral }
+      - { label: Tailwind CSS, variant: tag-neutral }
+      - { label: Vite, variant: tag-neutral }
+
+  - name: Backend & Infra
+    tags:
+      - { label: FastAPI, variant: tag-neutral }
+      - { label: Node.js, variant: tag-neutral }
+      - { label: PostgreSQL, variant: tag-neutral }
+      - { label: MongoDB, variant: tag-neutral }
+      - { label: MySQL, variant: tag-neutral }
+      - { label: SQLite, variant: tag-neutral }
+      - { label: Docker, variant: tag-neutral }
+      - { label: Terraform, variant: tag-neutral }
+
+  - name: Craft
+    tags:
+      - { label: Video Editing, variant: tag-accent-2 }
+      - { label: Visual Design, variant: tag-accent-2 }
+      - { label: Content Strategy, variant: tag-accent-2 }

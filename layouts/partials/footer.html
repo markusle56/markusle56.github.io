@@ -1,0 +1,15 @@
+<footer class="sec site-footer" id="contact">
+  <h2>Let's talk</h2>
+  <div class="footer-links">
+    {{- with site.Params.email }}
+    <a class="btn btn-secondary" href="mailto:{{ . }}">Email</a>
+    {{- end }}
+    {{- with site.Params.linkedin }}
+    <a class="btn btn-secondary" href="{{ . }}" target="_blank" rel="noopener">LinkedIn</a>
+    {{- end }}
+    {{- with site.Params.github }}
+    <a class="btn btn-secondary" href="{{ . }}" target="_blank" rel="noopener">GitHub</a>
+    {{- end }}
+  </div>
+  <p class="footer-note">© {{ now.Year }} {{ site.Params.author }}</p>
+</footer>

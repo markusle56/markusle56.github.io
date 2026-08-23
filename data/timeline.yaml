@@ -1,17 +1,17 @@
-# Timeline shown on the home page, newest first.
+# Timeline shown on the home page, newest first. Kept in step with the CV.
 entries:
   - when: "Jul 2026 - Present"
     title: "Data Science Intern, Lunio"
-    body: "Working in the Streamline team to develop a dynamic pricing service."
+    body: "Evaluating recommendation performance in the Streamline dynamic pricing team. Built a Terraform and AWS pipeline that exports analysis metrics for reuse across projects, plus a LangGraph agent that turns each pricing recommendation into a plain-language explanation, now shipped inside Streamline."
 
   - when: "Dec 2025 - Feb 2026"
-    title: "Research Student, AIML"
-    body: "Simulated copolymerization reactions to compute reactivity ratios and identify candidate compounds for solid-state batteries, helping design the systems and running them on an HPC cluster."
+    title: "Research Intern, Australian Institute for Machine Learning"
+    body: "Simulated copolymerisation reactions between monomers to compute reactivity ratios and identify candidate compounds for solid-state batteries. Designed the copolymerisation systems and ran the simulations on a high-performance computing cluster."
 
-  - when: "2024 - Present"
-    title: "Computer Science (Advanced), University of Adelaide"
-    body: "Undergraduate, focused on AI/ML and software engineering."
+  - when: "Feb 2024 - Present"
+    title: "Computer Science (Advanced), Adelaide University"
+    body: "Majoring in Artificial Intelligence, GPA 6.75/7.0. Coursework across algorithms and data structure analysis, neural networks and deep learning, multi-modal data analysis, and cloud and concurrent programming."
 
   - when: "High school"
-    title: "Chemistry major"
-    body: "Selected for the school and provincial chemistry training teams."
+    title: "Ben Tre High School for the Gifted"
+    body: "Chemistry major, national chemistry candidate."

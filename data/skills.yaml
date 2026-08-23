@@ -1,15 +1,25 @@
 # Skills shown in the "Skills & stack" section on the home page.
+# Kept in step with the CV: Programming and Frameworks/Tools there map onto
+# Languages, AI & ML, Frontend and Backend & Infra here.
 # variant: tag-accent | tag-accent-2 | tag-neutral | tag-outline
 groups:
   - name: Languages
     tags:
       - { label: Python, variant: tag-accent }
+      - { label: "C++", variant: tag-accent }
+      - { label: SQL, variant: tag-accent }
       - { label: TypeScript, variant: tag-accent }
       - { label: JavaScript, variant: tag-accent }
-      - { label: Java, variant: tag-accent }
-      - { label: "C++", variant: tag-accent }
       - { label: C, variant: tag-accent }
+      - { label: Java, variant: tag-accent }
       - { label: R, variant: tag-accent }
+
+  - name: AI & ML
+    tags:
+      - { label: PyTorch, variant: tag-accent }
+      - { label: LangGraph, variant: tag-accent }
+      - { label: Hugging Face Transformers, variant: tag-accent }
+      - { label: scikit-learn, variant: tag-accent }
 
   - name: Frontend
     tags:
@@ -23,12 +33,13 @@ groups:
     tags:
       - { label: FastAPI, variant: tag-neutral }
       - { label: Node.js, variant: tag-neutral }
+      - { label: AWS, variant: tag-neutral }
+      - { label: Terraform, variant: tag-neutral }
+      - { label: Docker, variant: tag-neutral }
       - { label: PostgreSQL, variant: tag-neutral }
       - { label: MongoDB, variant: tag-neutral }
       - { label: MySQL, variant: tag-neutral }
       - { label: SQLite, variant: tag-neutral }
-      - { label: Docker, variant: tag-neutral }
-      - { label: Terraform, variant: tag-neutral }
 
   - name: Craft
     tags:

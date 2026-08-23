@@ -77,7 +77,7 @@ unchanged.
 | "Outside the code"  | `content/_index.md` (`outside_text`, `outside_images`) |
 | Skills & stack      | `data/skills.yaml`                           |
 | Timeline            | `data/timeline.yaml`                         |
-| Contact links, résumé | `hugo.toml` under `[params]`               |
+| Contact links       | `hugo.toml` under `[params]`                 |
 | Full about page     | `content/about/_index.md`                    |
 
 The hero portrait is read from `assets/portrait.jpg`. Until that file exists the

@@ -14,8 +14,6 @@ description = "Advanced Computer Science undergrad at the University of Adelaide
 email = "anhkhoa.wm@gmail.com"
 linkedin = "https://www.linkedin.com/in/markus-le-581b55245/"
 github = "https://github.com/markusle56"
-# Recovered from the old build output — replace static/Resume.pdf to update it.
-resume = "/Resume.pdf"
 
 [params.sections.work]
 title = "Things I built"

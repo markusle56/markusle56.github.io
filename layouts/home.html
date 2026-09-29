@@ -67,6 +67,7 @@
       <div class="timeline-item">
         <span class="timeline-when">{{ .when }}</span>
         <h4>{{ .title }}</h4>
+        {{- with .type }}<span class="tag tag-neutral timeline-type">{{ . }}</span>{{ end }}
         <p>{{ .body }}</p>
       </div>
       {{- end }}

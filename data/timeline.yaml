@@ -1,11 +1,20 @@
 # Timeline shown on the home page, newest first. Kept in step with the CV.
+# `type` is the employment type chip under the position. Jobs set it; study does
+# not, and the chip is skipped when it is absent.
 entries:
-  - when: "Jul 2026 - Present"
+  - when: "Sep 2026 - Present"
+    title: "Data Scientist, Lunio"
+    type: "Part-time"
+    body: "Staying on with the Streamline dynamic pricing team after converting from the internship."
+
+  - when: "Jul 2026 - Sep 2026"
     title: "Data Science Intern, Lunio"
+    type: "Internship"
     body: "Evaluating recommendation performance in the Streamline dynamic pricing team. Built a Terraform and AWS pipeline that exports analysis metrics for reuse across projects, plus a LangGraph agent that turns each pricing recommendation into a plain-language explanation, now shipped inside Streamline."
 
   - when: "Dec 2025 - Feb 2026"
     title: "Research Intern, Australian Institute for Machine Learning"
+    type: "Internship"
     body: "Simulated copolymerisation reactions between monomers to compute reactivity ratios and identify candidate compounds for solid-state batteries. Designed the copolymerisation systems and ran the simulations on a high-performance computing cluster."
 
   - when: "Feb 2024 - Present"

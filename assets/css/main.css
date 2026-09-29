@@ -507,6 +507,10 @@ blockquote {
 .timeline-item h4 { margin: 2px 0 4px; }
 .timeline-item p { margin: 0; opacity: 0.75; font-size: 14px; max-width: 60ch; }
 
+/* Employment type, sitting under the position. Jobs carry one; study does not,
+   so it only renders when the entry sets `type`. */
+.timeline-type { margin-bottom: 6px; }
+
 /* --------------------------------------------------------------- outside */
 
 .outside {
